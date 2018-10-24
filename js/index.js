@@ -10,5 +10,6 @@ var databaseRef = database.ref('/');
 
 databaseRef.once('value').then(function (snapshot) {
     const databaseValue = snapshot.val();
-    console.log(databaseValue);
+    // console.log(databaseValue);
+    $("body").append(databaseValue[])
 });

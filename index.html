@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Studio 1</title>
+    <title>Art Gallary</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Your CSS Linked Below-->
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     
-    Hi there!
-    
-    
-    
-    
+   <div id="user_info">
+      <div id="profile_pic_container">
+        <img id="profile_pic" src = "">
+      </div>
+      <div id="info">
+        <h4 id="name"></h4>
+        <p id="bio"></p>
+        <p id="loc"></p>
+      </div>
+      <div id="contact">
+        <p id="phone"></p>
+        <p id="email"></p>
+      </div>
+   </div>
     
     
     
     <!-- jQuery Linked Below-->
     <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
       // Initialize Firebase
       var config = {

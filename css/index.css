@@ -1,1 +1,22 @@
 /* Write your CSS here */
+#user_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+}
+#profile_pic_container{
+    display: flex;
+    align-content: center;
+}
+#info{
+    
+}
+#contact{
+   
+}
+#profile_pic {
+    width: 70px;
+    height: 70px;
+}

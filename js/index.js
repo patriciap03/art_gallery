@@ -1,6 +1,7 @@
 // Bring both information from script2 and script3 
 
 import {display_user_info, display_contact_info, display_profile_pic} from "./script3.js"
+import {display_post} from "./script2.js"
 
 var database = firebase.database();
 var databaseRef = database.ref('/');
@@ -15,7 +16,11 @@ const databaseValue = snapshot.val();
   display_contact_info(UserContactInfo);
   display_profile_pic(UserInfo);
 //content data
-
+  const ContentInfo = databaseValue["content"];
+//display content data 
+  for (var post in ContentInfo) {
+    display_post(ContentInfo[post]);
+  }
 
 });
 

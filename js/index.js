@@ -43,3 +43,31 @@ const databaseValue = snapshot.val();
 //     var credential = error.credential;
 //     // ...
 //   });
+
+function initialize(){
+
+let modal = document.getElementById('post_modal');
+let btn = document.getElementById('add_post');
+let span = document.getElementById('cancel');
+
+
+
+btn.onclick = function() {
+  modal.style.display = 'block';
+}
+
+span.onclick = function() {
+  modal.style.display = 'none'
+}
+
+window.onclick = function(){
+  if (event.target == modal){
+    modal.style.display = 'none';
+  }
+}
+};
+
+$( document ).ready(function() {
+  initialize();
+
+});

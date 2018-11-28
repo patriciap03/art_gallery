@@ -5,6 +5,7 @@ import {display_post} from "./script2.js"
 
 var database = firebase.database();
 var databaseRef = database.ref('/');
+var content = database.ref('/content');
 
 databaseRef.once('value').then(function (snapshot) {
 const databaseValue = snapshot.val();  
@@ -24,6 +25,10 @@ const databaseValue = snapshot.val();
 
 });
 
+export function postToDatabase (data){
+  content.push({description:data.description, image:data.image});
+  
+};
 // var provider = new firebase.auth.GoogleAuthProvider();
 
 // firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -46,28 +51,8 @@ const databaseValue = snapshot.val();
 
 function initialize(){
 
-let modal = document.getElementById('post_modal');
-let btn = document.getElementById('add_post');
-let span = document.getElementById('cancel');
-
-
-
-btn.onclick = function() {
-  modal.style.display = 'block';
-}
-
-span.onclick = function() {
-  modal.style.display = 'none'
-}
-
-window.onclick = function(){
-  if (event.target == modal){
-    modal.style.display = 'none';
-  }
-}
-};
-
 $( document ).ready(function() {
   initialize();
 
 });
+

@@ -18,3 +18,11 @@ newPostButton.onclick = function() {
       modal.style.display = 'none';
     }
   };
+ 
+$(post).click(function(){
+  let image = $("#post_url").val();
+  let description = $("#post_description").val();
+  postToDatabase(image, description);
+  modal.style.display = 'none';
+});
+

@@ -1,27 +1,62 @@
-/* Write your CSS here */
+/* user container styling */
 #user_info {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    align-content: center;
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: beige;
+    border: solid black 1px;
 }
 #profile_pic_container{
     display: flex;
-    align-content: center;
+    justify-content: center; 
+    align-items: center;
+    border: solid black 1px;
 }
-#info{
-    
-}
-#contact{
-   
-}
-#profile_pic {
-
+#profile_pic{
+    display: flex;
     width: 70px;
     height: 70px;
+    border: solid black 1px;
 }
 
+/* user info styling */
+#info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: solid black 1px;
+}
+#name{
+    display: flex;
+    border: solid black 1px;
+}
+#bio{
+    display: flex;
+    border: solid black 1px;
+}
+#loc{
+    display: flex;
+    border: solid black 1px;
+}
+
+/* contact container styling */
+#contact{
+    display: flex;
+    border: solid black 1px;
+}
+#phone{
+    display: flex;
+    border: solid black 1px;
+}
+#email{
+    display: flex;
+    border: solid black 1px;
+}
+
+/* content styling */
 .content_pic{
     width:100px;
     height:100px;

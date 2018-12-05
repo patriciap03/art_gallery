@@ -11,7 +11,6 @@
   <body>
     
    <div id="user_info">
-    <header> 
       <div id="profile_pic_container">
         <img id="profile_pic" src = "">
       </div>
@@ -23,9 +22,7 @@
       <div id="contact">
         <p id="phone"></p>
         <p id="email"></p>
-      </div>
-
-    </header> 
+      </div> 
    </div>
 
    <div id="content">
@@ -40,19 +37,33 @@
    <div>
     <button id='new_post'>Add Post</button>
 
-    <div class='modal' id='post_modal'>
+    <!-- <div class='modal' id='post_modal'>
+        <form>
+        <h1>Add Post</h1>
+          <div class='modal-content'>
+            <label for="post_url">Image URL:</label>
+            <input type="text" id='post_url' name="image">
+            <label for="post_description">Description:</label>
+            <input type="text" id='post_description' name="description">
+            <button id='add_post' type="submit">Add</button>
+            <button id='cancel'>Cancel</button>
+          </div>
+      </form>
+    </div>
+   </div> -->
+   
+   <div class='modal' id='post_modal'>
       <div class='modal-content'>
         <h1>Add Post</h1>
         <h3>Image URL:</h3>
         <input id='post_url'>
         <h3>Description:</h3>
         <input id='post_description'>
-        <button id='add_post'>Add</button>
+        <button type="sumbit" id='add_post'>Add</button>
         <button id='cancel'>Cancel</button>
       </div>
     </div>
    </div>
-   
     
     <!-- jQuery Linked Below-->
     <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
@@ -70,6 +81,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Your Javascript Linked Below-->
-    <script src="js/index.js" type="module" defer></script> 
+    <script src="js/index.js" type="module" defer></script>
+    <script src="js/handlers.js" type="module" defer></script> 
   </body>
 </html>

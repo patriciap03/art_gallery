@@ -10,60 +10,50 @@
   </head>
   <body>
     
+    <!-- <div class="nav-bar">
+      <div>
+        <img id="logo" src="/logo.jpeg">
+      </div>
+      <div id="app-name">
+        <h4>Art Gallery</h4>
+        <button><img src=""></button>
+      </div>
+    </div> -->
+
    <div id="user_info">
       <div id="profile_pic_container">
         <img id="profile_pic" src = "">
       </div>
       <div id="info">
-        <h4 id="name"></h4>
+        <h3 id="name"></h3>
         <p id="bio"></p>
         <p id="loc"></p>
       </div>
       <div id="contact">
-        <p id="phone"></p>
-        <p id="email"></p>
+        <p id="phone"><strong>Phone Number: </strong> </p>
+        <p id="email"><strong>Email: </strong> </p>
       </div> 
    </div>
 
    <div id="content">
-     <div id="content_pic_containter">
-       <img id="content_pic" src="">
-     </div>
-     <div>
-       <h4 id="description"></h4>
-     </div>
+      <div>
+          <button id='new_post'>Add Post</button>
+         
+         <div class='modal' id='post_modal'>
+            <div class='modal-content'>
+              <h1>Add Post</h1>
+              <h3>Image URL:</h3>
+              <input id='post_url'>
+              <h3>Description:</h3>
+              <input id='post_description'>
+              <button type="sumbit" id='add_post'>Add</button>
+              <button id='cancel'>Cancel</button>
+            </div>
+          </div>
+         </div>
    </div>
     
-   <div>
-    <button id='new_post'>Add Post</button>
-
-    <!-- <div class='modal' id='post_modal'>
-        <form>
-        <h1>Add Post</h1>
-          <div class='modal-content'>
-            <label for="post_url">Image URL:</label>
-            <input type="text" id='post_url' name="image">
-            <label for="post_description">Description:</label>
-            <input type="text" id='post_description' name="description">
-            <button id='add_post' type="submit">Add</button>
-            <button id='cancel'>Cancel</button>
-          </div>
-      </form>
-    </div>
-   </div> -->
    
-   <div class='modal' id='post_modal'>
-      <div class='modal-content'>
-        <h1>Add Post</h1>
-        <h3>Image URL:</h3>
-        <input id='post_url'>
-        <h3>Description:</h3>
-        <input id='post_description'>
-        <button type="sumbit" id='add_post'>Add</button>
-        <button id='cancel'>Cancel</button>
-      </div>
-    </div>
-   </div>
     
     <!-- jQuery Linked Below-->
     <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>

@@ -53,19 +53,20 @@
 /* content styling */
 #content{
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-flow: column; 
     margin-right: 200px;
     margin-left: 200px;
     border: solid black 1px;
 }
+.content_pic_container{
+    display: flex;
+}
 .content_pic{
     width:200px;
     height:200px;
-    border: solid black 1px;
 }
 #description{
-    border: solid black 1px;
     text-align: center;
 }
 

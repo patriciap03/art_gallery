@@ -57,13 +57,14 @@
     flex-flow: column; 
     margin-right: 200px;
     margin-left: 200px;
+    margin-top: 100px;
 }
 .content_pic_container{
     display: flex;
 }
 .content_pic{
-    width:200px;
-    height:200px;
+    width:300px;
+    height:300px;
 }
 #description{
     text-align: center;
